@@ -1,0 +1,2 @@
+add_executable(pathtracer main.cpp)
+target_link_libraries(pathtracer PRIVATE project_options project_warnings)
