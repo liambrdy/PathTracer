@@ -19,6 +19,6 @@ catch_discover_tests(
     "${CMAKE_SOURCE_DIR}"
     EXTRA_ARGS
     -s
-    --reported=xml
+    --reporter=xml
     --out=test.xml
 )
