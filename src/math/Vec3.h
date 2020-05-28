@@ -77,10 +77,10 @@ public:
 
     [[nodiscard]] Vec3 Cross(const Vec3& b) const
     {
-        auto x = m_y * b.m_z - m_z * b.m_y;
-        auto y = m_z * b.m_x - m_x * b.m_z;
-        auto z = m_x * b.m_y - m_y * b.m_x;
-        return Vec3(x, y, z);
+        auto _x = m_y * b.m_z - m_z * b.m_y;
+        auto _y = m_z * b.m_x - m_x * b.m_z;
+        auto _z = m_x * b.m_y - m_y * b.m_x;
+        return Vec3(_x, _y, _z);
     }
 
     bool operator==(const Vec3& b) const { return m_x == b.m_x && m_y == b.m_y && m_z == b.m_z; }
