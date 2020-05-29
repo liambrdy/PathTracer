@@ -1,0 +1,1 @@
+/usr/bin/c++    -O2 -g -DNDEBUG   CMakeFiles/math_tests.dir/Vec3Tests.cpp.o CMakeFiles/math_tests.dir/RayTests.cpp.o ../../src/math/CMakeFiles/math.dir/Vec3.cpp.o ../../src/math/CMakeFiles/math.dir/Ray.cpp.o  -o ../../bin/math_tests  ../../lib/libcatch_main.a --coverage 

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liam/Development/C++/Pathtracer/src/math/Ray.cpp
+Ray.h
+/home/liam/Development/C++/Pathtracer/src/math/Ray.h
+
+/home/liam/Development/C++/Pathtracer/src/math/Ray.h
+Vec3.h
+/home/liam/Development/C++/Pathtracer/src/math/Vec3.h
+
+/home/liam/Development/C++/Pathtracer/src/math/Vec3.cpp
+Vec3.h
+/home/liam/Development/C++/Pathtracer/src/math/Vec3.h
+iostream
+-
+
+/home/liam/Development/C++/Pathtracer/src/math/Vec3.h
+cmath
+-
+cassert
+-
+iosfwd
+-
+

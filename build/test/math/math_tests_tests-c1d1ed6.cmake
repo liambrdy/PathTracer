@@ -1,0 +1,5 @@
+add_test( mathtests.Vectors [==[/home/liam/Development/C++/Pathtracer/build/bin/math_tests]==] Vectors -s [==[--reporter=xml]==] [==[--out=test.xml]==])
+set_tests_properties( mathtests.Vectors PROPERTIES WORKING_DIRECTORY [==[/home/liam/Development/C++/Pathtracer]==])
+add_test( mathtests.Rays [==[/home/liam/Development/C++/Pathtracer/build/bin/math_tests]==] Rays -s [==[--reporter=xml]==] [==[--out=test.xml]==])
+set_tests_properties( mathtests.Rays PROPERTIES WORKING_DIRECTORY [==[/home/liam/Development/C++/Pathtracer]==])
+set( math_tests_TESTS mathtests.Vectors mathtests.Rays)

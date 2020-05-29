@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/liam/Development/C++/Pathtracer/build/test",
+  "command": "/usr/bin/c++   -isystem /home/liam/.conan/data/catch2/2.12.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include    -O2 -g -DNDEBUG   --coverage -O0 -g -std=gnu++17 -o CMakeFiles/catch_main.dir/catch_main.cpp.o -c /home/liam/Development/C++/Pathtracer/test/catch_main.cpp",
+  "file": "/home/liam/Development/C++/Pathtracer/test/catch_main.cpp"
+},
+{
+  "directory": "/home/liam/Development/C++/Pathtracer/build/test/math",
+  "command": "/usr/bin/c++   -I/home/liam/Development/C++/Pathtracer/src/math/.. -isystem /home/liam/.conan/data/catch2/2.12.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include    -O2 -g -DNDEBUG   --coverage -O0 -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o CMakeFiles/math_tests.dir/Vec3Tests.cpp.o -c /home/liam/Development/C++/Pathtracer/test/math/Vec3Tests.cpp",
+  "file": "/home/liam/Development/C++/Pathtracer/test/math/Vec3Tests.cpp"
+},
+{
+  "directory": "/home/liam/Development/C++/Pathtracer/build/test/math",
+  "command": "/usr/bin/c++   -I/home/liam/Development/C++/Pathtracer/src/math/.. -isystem /home/liam/.conan/data/catch2/2.12.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include    -O2 -g -DNDEBUG   --coverage -O0 -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o CMakeFiles/math_tests.dir/RayTests.cpp.o -c /home/liam/Development/C++/Pathtracer/test/math/RayTests.cpp",
+  "file": "/home/liam/Development/C++/Pathtracer/test/math/RayTests.cpp"
+},
+{
+  "directory": "/home/liam/Development/C++/Pathtracer/build/src",
+  "command": "/usr/bin/c++   -I/home/liam/Development/C++/Pathtracer/src/math/..    -O2 -g -DNDEBUG   --coverage -O0 -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o CMakeFiles/pathtracer.dir/main.cpp.o -c /home/liam/Development/C++/Pathtracer/src/main.cpp",
+  "file": "/home/liam/Development/C++/Pathtracer/src/main.cpp"
+},
+{
+  "directory": "/home/liam/Development/C++/Pathtracer/build/src/math",
+  "command": "/usr/bin/c++      -O2 -g -DNDEBUG   --coverage -O0 -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o CMakeFiles/math.dir/Vec3.cpp.o -c /home/liam/Development/C++/Pathtracer/src/math/Vec3.cpp",
+  "file": "/home/liam/Development/C++/Pathtracer/src/math/Vec3.cpp"
+},
+{
+  "directory": "/home/liam/Development/C++/Pathtracer/build/src/math",
+  "command": "/usr/bin/c++      -O2 -g -DNDEBUG   --coverage -O0 -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o CMakeFiles/math.dir/Ray.cpp.o -c /home/liam/Development/C++/Pathtracer/src/math/Ray.cpp",
+  "file": "/home/liam/Development/C++/Pathtracer/src/math/Ray.cpp"
+}
+]
