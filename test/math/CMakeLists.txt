@@ -1,4 +1,4 @@
-add_executable(math_tests Vec3Tests.cpp)
+add_executable(math_tests Vec3Tests.cpp RayTests.cpp)
 target_link_libraries(math_tests PRIVATE project_options project_warnings math catch_main)
 
 catch_discover_tests(

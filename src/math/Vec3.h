@@ -2,6 +2,7 @@
 #define PATHTRACER_SRC_MATH_VEC3_H
 
 #include <cmath>
+#include <cassert>
 #include <iosfwd>
 
 class Vec3
@@ -78,6 +79,8 @@ public:
     Vec3& Normalize()
     {
         auto length = Length();
+        assert(length != 0 && "Vector has a length of zero!");
+
         m_x /= length;
         m_y /= length;
         m_z /= length;
