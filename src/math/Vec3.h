@@ -75,6 +75,15 @@ public:
     [[nodiscard]] double Length() const { return sqrt(LengthSquared()); }
     [[nodiscard]] double Dot(const Vec3& b) const { return m_x * b.m_x + m_y * b.m_y + m_z * b.m_z; }
 
+    Vec3& Normalize()
+    {
+        auto length = Length();
+        m_x /= length;
+        m_y /= length;
+        m_z /= length;
+        return *this;
+    }
+
     [[nodiscard]] Vec3 Cross(const Vec3& b) const
     {
         auto _x = m_y * b.m_z - m_z * b.m_y;

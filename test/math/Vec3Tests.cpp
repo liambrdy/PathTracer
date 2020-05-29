@@ -99,6 +99,12 @@ TEST_CASE("Vectors", "[math]")
         CHECK(Vec3(1, 2, 3).Cross(Vec3(4, 5, 6)) == Vec3(-3, 6, -3));
     }
 
+    SECTION("normalisation")
+    {
+        CHECK(Vec3(1, 2, 3).Normalize().Length() == 1.0);
+        CHECK(Vec3(1, 2, 3).Normalize() == Vec3(1./sqrt(14.), sqrt(2./7.), 3./sqrt(14.)));
+    }
+
     SECTION("streaming")
     {
         std::ostringstream os;
