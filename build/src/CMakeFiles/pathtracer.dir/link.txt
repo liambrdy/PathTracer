@@ -1,1 +1,0 @@
-/usr/bin/c++    -O2 -g -DNDEBUG   CMakeFiles/pathtracer.dir/main.cpp.o math/CMakeFiles/math.dir/Vec3.cpp.o math/CMakeFiles/math.dir/Ray.cpp.o  -o ../bin/pathtracer  --coverage 

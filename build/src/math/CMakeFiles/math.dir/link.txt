@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../lib/libmath.a  CMakeFiles/math.dir/Vec3.cpp.o CMakeFiles/math.dir/Ray.cpp.o
-/usr/bin/ranlib ../../lib/libmath.a
