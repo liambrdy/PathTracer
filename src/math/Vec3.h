@@ -1,5 +1,5 @@
-#ifndef PATHTRACER_SRC_MATH_VEC3_H
-#define PATHTRACER_SRC_MATH_VEC3_H
+#ifndef PATHTRACER_VEC3_H
+#define PATHTRACER_VEC3_H
 
 #include <cmath>
 #include <cassert>
@@ -113,4 +113,4 @@ private:
 
 std::ostream& operator<<(std::ostream& os, const Vec3& v);
 
-#endif // PATHTRACER_SRC_MATH_VEC3_H
+#endif // PATHTRACER_VEC3_H

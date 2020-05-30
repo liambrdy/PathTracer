@@ -1,5 +1,5 @@
-#ifndef PATHTRACER_SRC_MATH_RAY_H
-#define PATHTRACER_SRC_MATH_RAY_H
+#ifndef PATHTRACER_RAY_H
+#define PATHTRACER_RAY_H
 
 #include "Vec3.h"
 
@@ -14,8 +14,13 @@ public:
     const Vec3& GetOrigin() const { return m_origin; }
     const Vec3& GetDirection() const { return m_direction; }
 
+    static Ray FromTwoPoints(const Vec3& point1, const Vec3& point2)
+    {
+        return Ray(point1, (point2 - point1).Normalize());
+    }
+
 private:
     Vec3 m_origin{}, m_direction{};
 };
 
-#endif // PATHTRACER_SRC_MATH_RAY_H
+#endif // PATHTRACER_RAY_H

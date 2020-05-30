@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <cmath>
 
+#include "math/Sphere.h"
 #include "math/Vec3.h"
 
 int ComponentToInt(double x)
@@ -33,15 +34,36 @@ constexpr int BPP = 255;
 
 int main()
 {
+    const auto aspectRatio = static_cast<double>(W) / static_cast<double>(H);
+    const auto yFieldOfView = 0.5135;
+    const auto xFieldOfView = yFieldOfView * aspectRatio;
+
+    const Vec3 camPos(0, 0, 0);
+    const Vec3 camDir(0, 0, 1);
+    const Vec3 camX(1, 0, 0);
+    const auto camY = camX.Cross(camDir).Normalize();
+
+    Sphere c{ Vec3(0, 20, 50), 15};
+
     ArrayOutput output(W, H);
     for (int y = output.GetHeight() - 1; y >= 0; --y)
     {
+        auto yy = (static_cast<double>(y) / H) * 2 - 1.0;
         for (int x = 0; x < output.GetWidth(); ++x)
         {
-            auto u = static_cast<double>(x) / static_cast<double>(output.GetWidth());
-            auto v = static_cast<double>(y) / static_cast<double>(output.GetHeight());
+            auto xx = (static_cast<double>(x) / W) * 2 - 1.0;
+            auto dir = (camX * xx * xFieldOfView + camY * yy * yFieldOfView + camDir).Normalize();
+            Ray ray(camPos, dir);
+            auto hit = c.Intersect(ray);
 
-            Vec3 color(u, v, 0.2);
+            Vec3 color;
+
+            if (hit)
+            {
+                Vec3 mat(0.8, 0.2, 0.2);
+                color = mat * pow(dir.Dot(hit->normal), 2);
+            }
+
             output.Plot(x, y, color);
         }
     }
